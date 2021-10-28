@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+:root{
+    --mainColor: #49c5b0;
+    --maiLightColor: #8de6d7;
+    --secondaryColor:#4960d1;
+    --acentColor:#3fa636;
+    --text:whitesmoke;
+    --darkText:rgb(44, 44, 44);
+    --darkLightText:rgb(80, 80, 80);
+    --darkShadow: rgba(0, 0, 0, 0.11);
+    --header-height:4rem;
+    --border-radius:.2rem;
+
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--darkText);
+    /* background: linear-gradient(45deg, var(--mainColor) 40%, var(--maiLightColor) 80%,  #8de6d7a9); */
+    background: var(--text);
+}
+
+.header{
+    position: fixed;
+    height: var(--header-height);
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    color: var(--darkText);
+    background: rgba(255, 255, 255, 0.295);
+    backdrop-filter: blur(0.1rem);
+    padding: 0 1rem;
+}
+.headerActive{
+    background: rgba(156, 37, 37, 0.295);
+
+}
+.divisor{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background:var(--text);
+    left: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6.5rem;
+}
+
+svg{
+    max-height: 4rem;
+    max-width: 4rem;
+    transform: scale(0.8);
+
+}
+.pathLogo{
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:var(--mainColor);
+    width: 100%; 
+    height: auto;
+    filter:drop-shadow(0.2rem 0.2rem 1px #050505)
+
+}
+
+.logo-description{
+    font-size: 1.1rem;
+    color: var(--darkText)
+}
+.nav{
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+.nav__item{
+    margin: 0 1.5rem;
+
+}
+.socialMedia{
+    display: flex;
+    width: 6rem;
+    align-items: center;
+justify-content: space-around;
+}
+.socialMedia {
+    cursor: pointer;
+}
+
+/*
+        <button class='fixed-btn'>
+            <i class="fab fa-whatsapp"></i>
+        </button>
+*/
+.fixed-btn{
+    position: fixed;
+    z-index: 4;
+    bottom: 1rem;
+    right: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: none;
+    background: #25d366;
+    color:#ffffff;
+    font-size: 2.5rem;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    padding-top: var(--header-height);
+}
+
+/* 👯‍♀️ Sección Team 👯‍♀️*/
+.equipo{
+    position: relative;
+    font-size: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.equipoCardsContainer{
+    width: 80%;
+    padding: 5rem 2rem 0 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 .5rem 0.2rem var(--darkShadow);
+}
+
+.card{
+    transition: transform .1s ease-in-out;
+    height: 20rem;
+    width: 15rem;
+    background: var(--text);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border-radius: 0.3rem;
+}
+.cardHeader{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.card-image{
+    height: 90%;
+    max-width:auto;
+    border-radius: 0.2rem;
+}
+.cardDescription{
+    padding: 0.3rem 10%;
+}
+.cardDescription h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.cardDescription h6{
+    font-size: 0.8rem;
+    color: var(--darkLightText);
+}
+.cardFooter{
+    display: flex;
+    gap: 0.45rem;
+    padding: 0.5rem 10%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    
+}
+.socialmediacontainer{
+    height: 1.5rem;
+    width: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background:var(--darkShadow)
+}
+
+/* Sección Ubicacion 📌 */
+.ubication{
+    position: relative;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    filter: grayscale(0.5);
+    border: none;
+}
+
+.contact-card{
+    position: absolute;
+    z-index: 2;
+    width: 24rem;
+    height: 12rem;
+    padding: 2rem;
+    background: var(--secondaryColor);
+    color: var(--text);
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    line-height: 2.5rem;
+    border-radius: var(--border-radius);
+}
+.contact-card h1{
+    word-spacing: 0.5rem;
+}
