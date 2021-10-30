@@ -63,6 +63,7 @@ export const Header = () => {
   const header = document.createElement("header");
   header.classList.add("header");
   header.innerHTML = `
+  <div class="banner">María Silva 4509 - Villa Ballester 1653 - Buenos Aires</div>
   <picture class="logo">
   
   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -104,9 +105,8 @@ export const Header = () => {
             </picture>
         ${Nav()}
         <div class="socialMedia">
-            <i class="fas fa-phone-square-alt"></i>
+            <i class="fas fa-phone-alt"></i>
             <i class="fas fa-envelope-open"></i>
-            <i class="fab fa-whatsapp-square"></i>
 
         </div>
         <div class="divisor"></div>

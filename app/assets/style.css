@@ -15,6 +15,7 @@ ul{
 }
 a{
     text-decoration: none;
+    color:inherit;
 }
 a:visited{
     color: inherit;
@@ -28,7 +29,7 @@ a:visited{
     --darkText:rgb(44, 44, 44);
     --darkLightText:rgb(80, 80, 80);
     --darkShadow: rgba(0, 0, 0, 0.11);
-    --header-height:6rem;
+    --header-height:6.5rem;
     --border-radius:.2rem;
 
 }
@@ -48,15 +49,24 @@ body{
     height: var(--header-height);
     z-index: 5;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
     color: var(--darkText);
     background: rgba(255, 255, 255, 0.295);
     backdrop-filter: blur(0.1rem);
-    padding: 0 1rem;
 }
 .headerActive{
-    background: rgba(156, 37, 37, 0.295);
+    background: rgba(150, 150, 150, 0.295);
+
+}
+.banner{
+    width: 100vw;
+font-size: .8rem;
+    text-align: center;
+    padding: 0.3rem 0;
+    background: rgba(240, 239, 239, 0.637);
 
 }
 .divisor{
@@ -75,8 +85,8 @@ body{
 }
 
 svg{
-    max-height: 6rem;
-    max-width: 6rem;
+    max-height: 5rem;
+    max-width: 5rem;
     transform: scale(0.8);
 
 }
@@ -99,6 +109,7 @@ svg{
 .nav__list{
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
     list-style: none;
     height: 100%;
@@ -139,6 +150,7 @@ section{
     width: 100vw;
     height: 100vh;
     padding-top: var(--header-height);
+    overflow-y: auto;
 }
 
 /* 👯‍♀️ Sección Team 👯‍♀️*/
