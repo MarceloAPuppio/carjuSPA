@@ -30,8 +30,9 @@ a:visited{
     --darkText:rgb(44, 44, 44);
     --darkLightText:rgb(80, 80, 80);
     --darkShadow: rgba(0, 0, 0, 0.11);
-    --header-height:6.5rem;
+    --header-height:6rem;
     --border-radius:.2rem;
+    --section-title:1.6rem;
 
 }
 html{
@@ -42,7 +43,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--darkText);
     /* background: linear-gradient(45deg, var(--mainColor) 40%, var(--maiLightColor) 80%,  #8de6d7a9); */
-    background: var(--text);
+    background: rgba(20, 20, 20, 0.644)505;
 }
 
 .header{
@@ -53,6 +54,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    align-content: space-between;
     width: 100vw;
     color: var(--darkText);
     background: rgba(255, 255, 255, 0.295);
@@ -64,10 +66,11 @@ body{
 }
 .banner{
     width: 100vw;
-font-size: .8rem;
+    font-size: .8rem;
     text-align: center;
     padding: 0.3rem 0;
-    background: rgba(240, 239, 239, 0.637);
+    background: #1a1a1ad2;
+    color: var(--text);
 
 }
 .divisor{
@@ -86,8 +89,8 @@ font-size: .8rem;
 }
 
 svg{
-    max-height: 5rem;
-    max-width: 5rem;
+    max-height: 4.2rem;
+    max-width: 4.2rem;
     transform: scale(0.8);
 
 }
@@ -302,7 +305,7 @@ details summary::-webkit-details-marker {
     width: 24rem;
     height: 12rem;
     padding: 2rem;
-    background: var(--secondaryColor);
+    background: var(--acentColor);
     color: var(--text);
     top: 75%;
     left: 75%;
@@ -312,4 +315,47 @@ details summary::-webkit-details-marker {
 }
 .contact-card h1{
     word-spacing: 0.5rem;
+}
+
+/*Section About*/
+.about{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 100vh;
+}
+.about-text{
+    position: relative;
+    height:100%;
+    width: 45%;
+}
+/* <h2 class="about-title"><span class="text-emphasis">¿</span>Quiénes somos<span class="text-emphasis">?</span></h2>
+<p class="about-contain"> */
+.about-title{
+    font-size: var(--section-title);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.text-emphasis{
+    font-size: calc(var(--section-title) + 1rem);
+    margin: 0 .3rem;
+}
+
+.about-contain{
+    line-height: 1.5rem;
+}
+.about-contain p {
+    margin: 0.5rem;
+    text-align: justify;
+}
+.about-img{
+    position: relative;
+    height:100%;
+    width: 35%;
+    background: url('https://source.unsplash.com/random/1000x1000');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

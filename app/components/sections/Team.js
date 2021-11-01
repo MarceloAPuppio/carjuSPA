@@ -118,7 +118,7 @@ const TEAM = [
 ];
 export const Team = () => {
   return `
-    <section class="equipo">
+    <section id="equipo" class="equipo">
     <h3>Equipo Profesional</h3>
      ${TEAM.map((personal) => GroupCard(personal)).join("")}
     </section>
