@@ -108,6 +108,7 @@ export const Header = () => {
 
             </picture>
         ${Nav()}
+        <div class="collapseNav">sdsd</div>
         <div class="divisor"></div>
   `;
   return header;
