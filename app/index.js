@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", APP);
 window.addEventListener("load", () => {
   const clipPath = document.querySelector(".about-img");
   const details = document.querySelectorAll("details");
-  console.log(details);
 
   details.forEach((e) => {
     observer.observe(e);

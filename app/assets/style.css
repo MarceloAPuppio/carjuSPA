@@ -467,3 +467,39 @@ details summary::-webkit-details-marker {
     
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
+/* MEDIA QUERIES*/
+/*Mobile devices*/
+@media (min-width: 320px) and (max-width: 576px) { 
+
+    html{
+        font-size: 0.7rem;
+    }
+ }
+/* iPads, Tablets*/
+
+@media (min-width: 481px) and (max-width: 768px) { 
+
+    html{
+        font-size: 0.8rem;
+    }
+ }
+
+/* Small screens, laptops*/
+@media (min-width: 769px) and (max-width: 1024px) { 
+    html{
+        font-size: 0.9rem;
+    }
+}
+
+/* Desktops, large screens
+@media (min-width: 1025px) and (max-width: 1200px) { 
+    html{
+        font-size: 0.9rem;
+    }
+} */
+/* Extra large screens, TV*/
+@media (min-width: 1400px) { 
+    html{
+        font-size: 1.5rem;
+    }
+}
