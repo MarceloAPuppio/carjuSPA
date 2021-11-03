@@ -474,6 +474,12 @@ details summary::-webkit-details-marker {
     html{
         font-size: 0.7rem;
     }
+    details{
+        width: 90%;
+    }
+    .equipoCardsContainer{
+        justify-content: center;
+    }
  }
 /* iPads, Tablets*/
 
