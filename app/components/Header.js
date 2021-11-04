@@ -104,7 +104,7 @@ export const Header = () => {
 
             </picture>
         ${Nav()}
-        <div class="collapseNav">sdsd</div>
+        <div class="collapseNav"></div>
   `;
   return header;
 };
