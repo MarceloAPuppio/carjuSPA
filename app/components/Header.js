@@ -63,11 +63,7 @@ export const Header = () => {
   const header = document.createElement("header");
   header.classList.add("header");
   header.innerHTML = `
-  <div class="banner"><p>María Silva 4509. Villa Ballester (1653) - Buenos Aires |</p><div class="socialMedia">
-  <a class="socialMedia__item" href="tel:1132470536"><i class="fas fa-phone-alt"></i></a>
-  <a class="socialMedia__item" href="mailto:mail@mail.com"><i class="fas fa-envelope-open"></i></a>
-  <a class="socialMedia__item" target="_blank" href="https://www.google.com/maps/dir//M.+Silva+4509,+B1653+Villa+Ballester,+Provincia+de+Buenos+Aires/@-34.5447012,-58.5468624,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcb752cb98fea9:0x4f6ec7ffb68e36d0!2m2!1d-58.5446737!2d-34.5447012!3e0" ><i class="fas fa-directions"></i></a>
-</div></div>
+  <div class="banner"><p>María Silva 4509. Villa Ballester (1653) - Buenos Aires |</p></div>
   <picture class="logo">
   
   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -109,7 +105,6 @@ export const Header = () => {
             </picture>
         ${Nav()}
         <div class="collapseNav">sdsd</div>
-        <div class="divisor"></div>
   `;
   return header;
 };

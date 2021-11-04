@@ -58,7 +58,8 @@ body{
     align-content: space-between;
     color: var(--darkText);
     background: rgba(255, 255, 255, 0.295);
-    backdrop-filter: blur(0.1rem);
+    backdrop-filter: blur(0.5rem);
+    border-bottom: solid var(--text) 1px;
 }
 .headerActive{
     background: rgba(150, 150, 150, 0.295);
@@ -457,7 +458,9 @@ details summary::-webkit-details-marker {
     transition: all 1s ease-in-out;
 
 }
-
+.fixed-botoneraMobile{
+    display: none;
+}
 /*FOR INTERSECTION OBSERVER EFECTS*/
 .visible{
     opacity: 1;
@@ -472,13 +475,65 @@ details summary::-webkit-details-marker {
 @media (min-width: 320px) and (max-width: 576px) { 
 
     html{
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
     details{
         width: 90%;
     }
     .equipoCardsContainer{
         justify-content: center;
+    }
+    .homevideo{display: none;}
+    .about-img{display: none;}
+    .about-text{
+    width: 90%}
+    .fixed-botoneraMobile{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        background: red;
+        position: fixed;
+        z-index: 5;
+        bottom: 0;
+        width: 100vw;
+        height: 3.5rem;
+        font-size: 1.7rem;
+        background: rgba(255, 255, 255, 0.295);
+        backdrop-filter: blur(0.5rem);
+        border-top: var(--text) 2px solid;
+    }        
+    .fixed-btn{
+        display: none;
+    }       
+    .contact-card{
+        top: 65%;
+        left: 50%;
+    }
+    .color-verde{
+        color: green !important;
+    }
+    .color-turquesa{
+        color: rgb(53, 138, 129) !important;
+    }
+    .color-azul{
+        color: rgb(32, 32, 146) !important;
+    }
+    .color-fucsia{
+        color: rgb(138, 0, 138) !important;
+
+    }
+    .botonerMobileAnchor{
+        border-right: solid var(--text) 2px;
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .nav{
+        display: none;
     }
  }
 /* iPads, Tablets*/
@@ -488,6 +543,13 @@ details summary::-webkit-details-marker {
     html{
         font-size: 0.8rem;
     }
+    .homevideo{display: none;} 
+    .about-img{display: none;}
+    .about-text{
+
+    width: 90%;
+}
+
  }
 
 /* Small screens, laptops*/

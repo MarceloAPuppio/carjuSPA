@@ -18,7 +18,7 @@ const cargarImagen = (entradas, observador) => {
 export const observer = new IntersectionObserver(cargarContenido, {
   root: null,
   rootMargin: "200px",
-  threshold: 0.9,
+  threshold: 0.2,
 });
 export const observerImg = new IntersectionObserver(cargarImagen, {
   root: null,
